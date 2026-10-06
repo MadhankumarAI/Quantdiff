@@ -1,0 +1,1074 @@
+{
+  "candidates": [
+    {
+      "agreement": {
+        "cases": 12,
+        "exact_match_rate": 0.5,
+        "mean_similarity": 0.8472168029068264,
+        "per_case": [
+          {
+            "case_id": "chat-001",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-002",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-003",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-004",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-005",
+            "similarity": 0.42857142857142855
+          },
+          {
+            "case_id": "chat-006",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-007",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-008",
+            "similarity": 0.6388888888888888
+          },
+          {
+            "case_id": "chat-009",
+            "similarity": 0.5968109339407744
+          },
+          {
+            "case_id": "chat-010",
+            "similarity": 0.9166666666666666
+          },
+          {
+            "case_id": "chat-011",
+            "similarity": 0.7256637168141593
+          },
+          {
+            "case_id": "chat-012",
+            "similarity": 0.86
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "ollama",
+        "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+        "context_length": 4096,
+        "details": [
+          [
+            "quantization",
+            "Q4_K_M"
+          ],
+          [
+            "parameter_size",
+            "494.03M"
+          ],
+          [
+            "trained_context_length",
+            "32768"
+          ],
+          [
+            "server_version",
+            "0.35.1"
+          ],
+          [
+            "digest",
+            "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67"
+          ]
+        ],
+        "exact_token_ids": false,
+        "model": "qwen2.5:0.5b-instruct-q4_K_M",
+        "size_bytes": 397821319,
+        "supports_logprobs": true,
+        "template_dialect": "go",
+        "weights_id": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67"
+      },
+      "logit": {
+        "exact_token_ids": false,
+        "kld_max": 0.3148758807159471,
+        "kld_mean": 0.028849460199186484,
+        "kld_p99": 0.2838521004637831,
+        "per_prompt": [
+          {
+            "kld_mean": 0.042350078231806976,
+            "positions": 16,
+            "prompt_id": "score-001",
+            "top1_matches": 12
+          },
+          {
+            "kld_mean": 0.038932167444818394,
+            "positions": 16,
+            "prompt_id": "score-002",
+            "top1_matches": 12
+          },
+          {
+            "kld_mean": 0.024710480453059454,
+            "positions": 16,
+            "prompt_id": "score-003",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.025431981986548835,
+            "positions": 16,
+            "prompt_id": "score-004",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.02919031375045429,
+            "positions": 16,
+            "prompt_id": "score-005",
+            "top1_matches": 12
+          },
+          {
+            "kld_mean": 0.04561324446759917,
+            "positions": 16,
+            "prompt_id": "score-006",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.02928892444429774,
+            "positions": 16,
+            "prompt_id": "score-007",
+            "top1_matches": 12
+          },
+          {
+            "kld_mean": 0.02166619151758834,
+            "positions": 16,
+            "prompt_id": "score-008",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.017931732884312566,
+            "positions": 16,
+            "prompt_id": "score-009",
+            "top1_matches": 16
+          },
+          {
+            "kld_mean": 0.02560766155978928,
+            "positions": 16,
+            "prompt_id": "score-010",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.015443599980564774,
+            "positions": 16,
+            "prompt_id": "score-011",
+            "top1_matches": 15
+          },
+          {
+            "kld_mean": 0.03002714566939798,
+            "positions": 16,
+            "prompt_id": "score-012",
+            "top1_matches": 15
+          }
+        ],
+        "positions": 192,
+        "prompts": 12,
+        "top1_agreement": 0.828125
+      },
+      "outcomes": [
+        {
+          "case_id": "json-001",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-002",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-003",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-004",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-005",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-006",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-007",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-008",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-009",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-010",
+          "kind": "json",
+          "passed": false,
+          "reason": "/speed: must be <= 72.01"
+        },
+        {
+          "case_id": "json-011",
+          "kind": "json",
+          "passed": false,
+          "reason": "invalid JSON: Unterminated string starting at: line 1 column 1144 (char 1143)"
+        },
+        {
+          "case_id": "json-012",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-001",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-002",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-003",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-004",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-005",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-006",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-007",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called get_current_weather, expected a direct answer"
+        },
+        {
+          "case_id": "tools-008",
+          "kind": "tools",
+          "passed": false,
+          "reason": "made no tool call, expected get_flight_status"
+        },
+        {
+          "case_id": "tools-009",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-010",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-011",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-012",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        }
+      ],
+      "perf": {
+        "mean_latency_seconds": 1.257740466671142,
+        "source": "server",
+        "tokens_per_second": 43.983481261216006
+      },
+      "preflight": [
+        {
+          "check": "logprobs",
+          "fix": null,
+          "message": "logprobs available",
+          "severity": "ok"
+        },
+        {
+          "check": "context",
+          "fix": null,
+          "message": "model recalled the start of a 1500-token prompt",
+          "severity": "ok"
+        },
+        {
+          "check": "tokenizer",
+          "fix": null,
+          "message": "qwen2.5:0.5b-instruct-q4_K_M cannot tokenize; tokenizers not compared",
+          "severity": "skip"
+        }
+      ],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "qwen2.5:0.5b-instruct-q4_K_M",
+        "model": "qwen2.5:0.5b-instruct-q4_K_M"
+      },
+      "tasks": [
+        {
+          "failures": [
+            {
+              "case_id": "json-010",
+              "kind": "json",
+              "passed": false,
+              "reason": "/speed: must be <= 72.01"
+            },
+            {
+              "case_id": "json-011",
+              "kind": "json",
+              "passed": false,
+              "reason": "invalid JSON: Unterminated string starting at: line 1 column 1144 (char 1143)"
+            }
+          ],
+          "kind": "json",
+          "passed": 10,
+          "rate": 0.8333333333333334,
+          "skipped": 0,
+          "total": 12
+        },
+        {
+          "failures": [
+            {
+              "case_id": "tools-007",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called get_current_weather, expected a direct answer"
+            },
+            {
+              "case_id": "tools-008",
+              "kind": "tools",
+              "passed": false,
+              "reason": "made no tool call, expected get_flight_status"
+            }
+          ],
+          "kind": "tools",
+          "passed": 10,
+          "rate": 0.8333333333333334,
+          "skipped": 0,
+          "total": 12
+        }
+      ]
+    },
+    {
+      "agreement": {
+        "cases": 12,
+        "exact_match_rate": 0.3333333333333333,
+        "mean_similarity": 0.724753358525391,
+        "per_case": [
+          {
+            "case_id": "chat-001",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-002",
+            "similarity": 0.4
+          },
+          {
+            "case_id": "chat-003",
+            "similarity": 0.5279187817258884
+          },
+          {
+            "case_id": "chat-004",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-005",
+            "similarity": 0.07407407407407407
+          },
+          {
+            "case_id": "chat-006",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-007",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-008",
+            "similarity": 0.4423076923076923
+          },
+          {
+            "case_id": "chat-009",
+            "similarity": 0.7215496368038741
+          },
+          {
+            "case_id": "chat-010",
+            "similarity": 0.9565217391304348
+          },
+          {
+            "case_id": "chat-011",
+            "similarity": 0.943089430894309
+          },
+          {
+            "case_id": "chat-012",
+            "similarity": 0.631578947368421
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "ollama",
+        "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+        "context_length": 4096,
+        "details": [
+          [
+            "quantization",
+            "Q2_K"
+          ],
+          [
+            "parameter_size",
+            "494.03M"
+          ],
+          [
+            "trained_context_length",
+            "32768"
+          ],
+          [
+            "server_version",
+            "0.35.1"
+          ],
+          [
+            "digest",
+            "fa66a85e7fe29fb1af484c97e9a366383004bb6e2ea6820743fb69ff07ff3f22"
+          ]
+        ],
+        "exact_token_ids": false,
+        "model": "qwen2.5:0.5b-instruct-q2_K",
+        "size_bytes": 338620805,
+        "supports_logprobs": true,
+        "template_dialect": "go",
+        "weights_id": "fa66a85e7fe29fb1af484c97e9a366383004bb6e2ea6820743fb69ff07ff3f22"
+      },
+      "logit": {
+        "exact_token_ids": false,
+        "kld_max": 1.2585565357193802,
+        "kld_mean": 0.10553535470401709,
+        "kld_p99": 0.6765151041997562,
+        "per_prompt": [
+          {
+            "kld_mean": 0.10150513289842739,
+            "positions": 16,
+            "prompt_id": "score-001",
+            "top1_matches": 11
+          },
+          {
+            "kld_mean": 0.13633272563718132,
+            "positions": 16,
+            "prompt_id": "score-002",
+            "top1_matches": 15
+          },
+          {
+            "kld_mean": 0.11092976337574449,
+            "positions": 16,
+            "prompt_id": "score-003",
+            "top1_matches": 8
+          },
+          {
+            "kld_mean": 0.07497193598284492,
+            "positions": 16,
+            "prompt_id": "score-004",
+            "top1_matches": 14
+          },
+          {
+            "kld_mean": 0.070454034610166,
+            "positions": 16,
+            "prompt_id": "score-005",
+            "top1_matches": 12
+          },
+          {
+            "kld_mean": 0.13052197738816013,
+            "positions": 16,
+            "prompt_id": "score-006",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.11698905025224948,
+            "positions": 16,
+            "prompt_id": "score-007",
+            "top1_matches": 14
+          },
+          {
+            "kld_mean": 0.15369457290459138,
+            "positions": 16,
+            "prompt_id": "score-008",
+            "top1_matches": 8
+          },
+          {
+            "kld_mean": 0.08771769063092175,
+            "positions": 16,
+            "prompt_id": "score-009",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.07392039096743669,
+            "positions": 16,
+            "prompt_id": "score-010",
+            "top1_matches": 14
+          },
+          {
+            "kld_mean": 0.10472298103194493,
+            "positions": 16,
+            "prompt_id": "score-011",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.1046640007685367,
+            "positions": 16,
+            "prompt_id": "score-012",
+            "top1_matches": 16
+          }
+        ],
+        "positions": 192,
+        "prompts": 12,
+        "top1_agreement": 0.7864583333333334
+      },
+      "outcomes": [
+        {
+          "case_id": "json-001",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-002",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-003",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-004",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-005",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-006",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-007",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-008",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-009",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-010",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-011",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-012",
+          "kind": "json",
+          "passed": false,
+          "reason": "/emails/0: does not match pattern '^[^@\\\\s]+@[^@\\\\s]+\\\\.[a-z]{2,}$' (and 2 more)"
+        },
+        {
+          "case_id": "tools-001",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-002",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-003",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-004",
+          "kind": "tools",
+          "passed": false,
+          "reason": "convert_currency arguments violate the schema: /: missing required property 'from_currency'"
+        },
+        {
+          "case_id": "tools-005",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-006",
+          "kind": "tools",
+          "passed": false,
+          "reason": "search_flights arguments violate the schema: /passengers: expected integer, got string"
+        },
+        {
+          "case_id": "tools-007",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-008",
+          "kind": "tools",
+          "passed": false,
+          "reason": "made no tool call, expected get_flight_status"
+        },
+        {
+          "case_id": "tools-009",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-010",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called create_calendar_event, expected list_calendar_events"
+        },
+        {
+          "case_id": "tools-011",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-012",
+          "kind": "tools",
+          "passed": false,
+          "reason": "made no tool call, expected query_orders"
+        }
+      ],
+      "perf": {
+        "mean_latency_seconds": 1.0126743750006426,
+        "source": "server",
+        "tokens_per_second": 49.81411521047635
+      },
+      "preflight": [
+        {
+          "check": "logprobs",
+          "fix": null,
+          "message": "logprobs available",
+          "severity": "ok"
+        },
+        {
+          "check": "context",
+          "fix": null,
+          "message": "model recalled the start of a 1500-token prompt",
+          "severity": "ok"
+        },
+        {
+          "check": "tokenizer",
+          "fix": null,
+          "message": "qwen2.5:0.5b-instruct-q2_K cannot tokenize; tokenizers not compared",
+          "severity": "skip"
+        }
+      ],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "qwen2.5:0.5b-instruct-q2_K",
+        "model": "qwen2.5:0.5b-instruct-q2_K"
+      },
+      "tasks": [
+        {
+          "failures": [
+            {
+              "case_id": "json-012",
+              "kind": "json",
+              "passed": false,
+              "reason": "/emails/0: does not match pattern '^[^@\\\\s]+@[^@\\\\s]+\\\\.[a-z]{2,}$' (and 2 more)"
+            }
+          ],
+          "kind": "json",
+          "passed": 11,
+          "rate": 0.9166666666666666,
+          "skipped": 0,
+          "total": 12
+        },
+        {
+          "failures": [
+            {
+              "case_id": "tools-004",
+              "kind": "tools",
+              "passed": false,
+              "reason": "convert_currency arguments violate the schema: /: missing required property 'from_currency'"
+            },
+            {
+              "case_id": "tools-006",
+              "kind": "tools",
+              "passed": false,
+              "reason": "search_flights arguments violate the schema: /passengers: expected integer, got string"
+            },
+            {
+              "case_id": "tools-008",
+              "kind": "tools",
+              "passed": false,
+              "reason": "made no tool call, expected get_flight_status"
+            },
+            {
+              "case_id": "tools-010",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called create_calendar_event, expected list_calendar_events"
+            },
+            {
+              "case_id": "tools-012",
+              "kind": "tools",
+              "passed": false,
+              "reason": "made no tool call, expected query_orders"
+            }
+          ],
+          "kind": "tools",
+          "passed": 7,
+          "rate": 0.5833333333333334,
+          "skipped": 0,
+          "total": 12
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-10-05T16:18:39+00:00",
+  "notes": [],
+  "quantdiff_version": "0.1.0",
+  "reference": {
+    "agreement": null,
+    "errors": [],
+    "info": {
+      "backend": "ollama",
+      "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+      "context_length": 4096,
+      "details": [
+        [
+          "quantization",
+          "Q8_0"
+        ],
+        [
+          "parameter_size",
+          "494.03M"
+        ],
+        [
+          "trained_context_length",
+          "32768"
+        ],
+        [
+          "server_version",
+          "0.35.1"
+        ],
+        [
+          "digest",
+          "84d044692a2ce0a5a063d3177ca7a69fb189fd81b3139a7a3ead74ccf42a51dc"
+        ]
+      ],
+      "exact_token_ids": false,
+      "model": "qwen2.5:0.5b-instruct-q8_0",
+      "size_bytes": 531081605,
+      "supports_logprobs": true,
+      "template_dialect": "go",
+      "weights_id": "84d044692a2ce0a5a063d3177ca7a69fb189fd81b3139a7a3ead74ccf42a51dc"
+    },
+    "logit": null,
+    "outcomes": [
+      {
+        "case_id": "json-001",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-002",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-003",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-004",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-005",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-006",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-007",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-008",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-009",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-010",
+        "kind": "json",
+        "passed": false,
+        "reason": "/speed: must be <= 72.01"
+      },
+      {
+        "case_id": "json-011",
+        "kind": "json",
+        "passed": false,
+        "reason": "invalid JSON: Unterminated string starting at: line 1 column 1934 (char 1933)"
+      },
+      {
+        "case_id": "json-012",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-001",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-002",
+        "kind": "tools",
+        "passed": false,
+        "reason": "called get_current_weather, expected a direct answer"
+      },
+      {
+        "case_id": "tools-003",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-004",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-005",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-006",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-007",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-008",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-009",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-010",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-011",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-012",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      }
+    ],
+    "perf": {
+      "mean_latency_seconds": 1.5149545333366001,
+      "source": "server",
+      "tokens_per_second": 35.082698325553096
+    },
+    "preflight": [
+      {
+        "check": "logprobs",
+        "fix": null,
+        "message": "logprobs available",
+        "severity": "ok"
+      },
+      {
+        "check": "context",
+        "fix": null,
+        "message": "model recalled the start of a 1500-token prompt",
+        "severity": "ok"
+      }
+    ],
+    "spec": {
+      "api_key_env": null,
+      "base_url": "http://127.0.0.1:11434",
+      "kind": "ollama",
+      "label": "qwen2.5:0.5b-instruct-q8_0",
+      "model": "qwen2.5:0.5b-instruct-q8_0"
+    },
+    "tasks": [
+      {
+        "failures": [
+          {
+            "case_id": "json-010",
+            "kind": "json",
+            "passed": false,
+            "reason": "/speed: must be <= 72.01"
+          },
+          {
+            "case_id": "json-011",
+            "kind": "json",
+            "passed": false,
+            "reason": "invalid JSON: Unterminated string starting at: line 1 column 1934 (char 1933)"
+          }
+        ],
+        "kind": "json",
+        "passed": 10,
+        "rate": 0.8333333333333334,
+        "skipped": 0,
+        "total": 12
+      },
+      {
+        "failures": [
+          {
+            "case_id": "tools-002",
+            "kind": "tools",
+            "passed": false,
+            "reason": "called get_current_weather, expected a direct answer"
+          }
+        ],
+        "kind": "tools",
+        "passed": 11,
+        "rate": 0.9166666666666666,
+        "skipped": 0,
+        "total": 12
+      }
+    ]
+  },
+  "schema_version": 2,
+  "settings": {
+    "allow_code_exec": false,
+    "longest_prompt_tokens": 160,
+    "prompts_file": null,
+    "score_tokens": 16,
+    "seed": 0,
+    "suites": [
+      "json",
+      "tools",
+      "chat"
+    ],
+    "top_k": 10
+  },
+  "title": "qwen2.5:0.5b-instruct: q8_0 vs q4_K_M vs q2_K"
+}

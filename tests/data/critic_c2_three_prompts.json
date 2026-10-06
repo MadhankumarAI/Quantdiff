@@ -1,0 +1,320 @@
+{
+  "candidates": [
+    {
+      "agreement": {
+        "cases": 3,
+        "exact_match_rate": 0.3333333333333333,
+        "mean_similarity": 0.8283934134401424,
+        "per_case": [
+          {
+            "case_id": "prompt-001",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "prompt-002",
+            "similarity": 0.8571428571428571
+          },
+          {
+            "case_id": "prompt-003",
+            "similarity": 0.6280373831775701
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "ollama",
+        "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+        "context_length": 4096,
+        "details": [
+          [
+            "quantization",
+            "Q4_K_M"
+          ],
+          [
+            "parameter_size",
+            "494.03M"
+          ],
+          [
+            "trained_context_length",
+            "32768"
+          ],
+          [
+            "server_version",
+            "0.35.1"
+          ],
+          [
+            "digest",
+            "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67"
+          ]
+        ],
+        "exact_token_ids": false,
+        "model": "qwen2.5:0.5b-instruct-q4_K_M",
+        "size_bytes": 397821319,
+        "supports_logprobs": true,
+        "template_dialect": "go",
+        "weights_id": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67"
+      },
+      "logit": {
+        "exact_token_ids": false,
+        "kld_max": 0.09763872665204726,
+        "kld_mean": 0.02346430507790934,
+        "kld_p99": 0.09763872665204726,
+        "per_prompt": [
+          {
+            "kld_mean": 0.019315324373307196,
+            "positions": 16,
+            "prompt_id": "prompt-001",
+            "top1_matches": 16
+          },
+          {
+            "kld_mean": 0.029222099166280463,
+            "positions": 16,
+            "prompt_id": "prompt-002",
+            "top1_matches": 14
+          },
+          {
+            "kld_mean": 0.021855491694140368,
+            "positions": 16,
+            "prompt_id": "prompt-003",
+            "top1_matches": 15
+          }
+        ],
+        "positions": 48,
+        "prompts": 3,
+        "top1_agreement": 0.9375
+      },
+      "outcomes": [],
+      "perf": {
+        "mean_latency_seconds": 2.5138246666659447,
+        "source": "server",
+        "tokens_per_second": 44.49187192547776
+      },
+      "preflight": [
+        {
+          "check": "logprobs",
+          "fix": null,
+          "message": "logprobs available",
+          "severity": "ok"
+        },
+        {
+          "check": "context",
+          "fix": null,
+          "message": "model recalled the start of a 1500-token prompt",
+          "severity": "ok"
+        },
+        {
+          "check": "tokenizer",
+          "fix": null,
+          "message": "qwen2.5:0.5b-instruct-q4_K_M cannot tokenize; tokenizers not compared",
+          "severity": "skip"
+        }
+      ],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "qwen2.5:0.5b-instruct-q4_K_M",
+        "model": "qwen2.5:0.5b-instruct-q4_K_M"
+      },
+      "tasks": []
+    },
+    {
+      "agreement": {
+        "cases": 3,
+        "exact_match_rate": 0.0,
+        "mean_similarity": 0.581480107852439,
+        "per_case": [
+          {
+            "case_id": "prompt-001",
+            "similarity": 0.4696969696969697
+          },
+          {
+            "case_id": "prompt-002",
+            "similarity": 0.6382153249272551
+          },
+          {
+            "case_id": "prompt-003",
+            "similarity": 0.6365280289330922
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "ollama",
+        "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+        "context_length": 4096,
+        "details": [
+          [
+            "quantization",
+            "Q2_K"
+          ],
+          [
+            "parameter_size",
+            "494.03M"
+          ],
+          [
+            "trained_context_length",
+            "32768"
+          ],
+          [
+            "server_version",
+            "0.35.1"
+          ],
+          [
+            "digest",
+            "fa66a85e7fe29fb1af484c97e9a366383004bb6e2ea6820743fb69ff07ff3f22"
+          ]
+        ],
+        "exact_token_ids": false,
+        "model": "qwen2.5:0.5b-instruct-q2_K",
+        "size_bytes": 338620805,
+        "supports_logprobs": true,
+        "template_dialect": "go",
+        "weights_id": "fa66a85e7fe29fb1af484c97e9a366383004bb6e2ea6820743fb69ff07ff3f22"
+      },
+      "logit": {
+        "exact_token_ids": false,
+        "kld_max": 0.5387742651904176,
+        "kld_mean": 0.10822034892439299,
+        "kld_p99": 0.5387742651904176,
+        "per_prompt": [
+          {
+            "kld_mean": 0.10852092606952668,
+            "positions": 16,
+            "prompt_id": "prompt-001",
+            "top1_matches": 14
+          },
+          {
+            "kld_mean": 0.08504264124745299,
+            "positions": 16,
+            "prompt_id": "prompt-002",
+            "top1_matches": 13
+          },
+          {
+            "kld_mean": 0.1310974794561993,
+            "positions": 16,
+            "prompt_id": "prompt-003",
+            "top1_matches": 14
+          }
+        ],
+        "positions": 48,
+        "prompts": 3,
+        "top1_agreement": 0.8541666666666666
+      },
+      "outcomes": [],
+      "perf": {
+        "mean_latency_seconds": 2.2777951000025496,
+        "source": "server",
+        "tokens_per_second": 48.95118290077412
+      },
+      "preflight": [
+        {
+          "check": "logprobs",
+          "fix": null,
+          "message": "logprobs available",
+          "severity": "ok"
+        },
+        {
+          "check": "context",
+          "fix": null,
+          "message": "model recalled the start of a 1500-token prompt",
+          "severity": "ok"
+        },
+        {
+          "check": "tokenizer",
+          "fix": null,
+          "message": "qwen2.5:0.5b-instruct-q2_K cannot tokenize; tokenizers not compared",
+          "severity": "skip"
+        }
+      ],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "qwen2.5:0.5b-instruct-q2_K",
+        "model": "qwen2.5:0.5b-instruct-q2_K"
+      },
+      "tasks": []
+    }
+  ],
+  "created_at": "2026-10-05T16:25:51+00:00",
+  "notes": [],
+  "quantdiff_version": "0.1.0",
+  "reference": {
+    "agreement": null,
+    "errors": [],
+    "info": {
+      "backend": "ollama",
+      "chat_template": "{{- if .Messages }}\n{{- if or .System .Tools }}<|im_start|>system\n{{- if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end }}<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ end }}\n{{- end }}\n{{- else }}\n{{- if .System }}<|im_start|>system\n{{ .System }}<|im_end|>\n{{ end }}{{ if .Prompt }}<|im_start|>user\n{{ .Prompt }}<|im_end|>\n{{ end }}<|im_start|>assistant\n{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}",
+      "context_length": 4096,
+      "details": [
+        [
+          "quantization",
+          "Q8_0"
+        ],
+        [
+          "parameter_size",
+          "494.03M"
+        ],
+        [
+          "trained_context_length",
+          "32768"
+        ],
+        [
+          "server_version",
+          "0.35.1"
+        ],
+        [
+          "digest",
+          "84d044692a2ce0a5a063d3177ca7a69fb189fd81b3139a7a3ead74ccf42a51dc"
+        ]
+      ],
+      "exact_token_ids": false,
+      "model": "qwen2.5:0.5b-instruct-q8_0",
+      "size_bytes": 531081605,
+      "supports_logprobs": true,
+      "template_dialect": "go",
+      "weights_id": "84d044692a2ce0a5a063d3177ca7a69fb189fd81b3139a7a3ead74ccf42a51dc"
+    },
+    "logit": null,
+    "outcomes": [],
+    "perf": {
+      "mean_latency_seconds": 3.2040741666666386,
+      "source": "server",
+      "tokens_per_second": 34.91267534219793
+    },
+    "preflight": [
+      {
+        "check": "logprobs",
+        "fix": null,
+        "message": "logprobs available",
+        "severity": "ok"
+      },
+      {
+        "check": "context",
+        "fix": null,
+        "message": "model recalled the start of a 1500-token prompt",
+        "severity": "ok"
+      }
+    ],
+    "spec": {
+      "api_key_env": null,
+      "base_url": "http://127.0.0.1:11434",
+      "kind": "ollama",
+      "label": "qwen2.5:0.5b-instruct-q8_0",
+      "model": "qwen2.5:0.5b-instruct-q8_0"
+    },
+    "tasks": []
+  },
+  "schema_version": 2,
+  "settings": {
+    "allow_code_exec": false,
+    "longest_prompt_tokens": 28,
+    "prompts_file": "mine.jsonl",
+    "score_tokens": 16,
+    "seed": 0,
+    "suites": [],
+    "top_k": 10
+  },
+  "title": "qwen2.5:0.5b-instruct: q8_0 vs q4_K_M vs q2_K"
+}

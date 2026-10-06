@@ -45,11 +45,24 @@ _JSON_TYPE_NAMES: Final = (
     (list, "array"),
     (dict, "object"),
 )
+
+
+def _is_number(value: JSONValue) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool)
+
+
+def _is_integer(value: JSONValue) -> bool:
+    """JSON has one number type, so 3.0 is an integer; float() would overflow on big ints."""
+    if isinstance(value, float):
+        return value.is_integer()
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
 _TYPE_CHECKS: Final[Mapping[str, Callable[[JSONValue], bool]]] = {
     "null": lambda value: value is None,
     "boolean": lambda value: isinstance(value, bool),
-    "integer": lambda value: _is_integer(value),
-    "number": lambda value: _is_number(value),
+    "integer": _is_integer,
+    "number": _is_number,
     "string": lambda value: isinstance(value, str),
     "array": lambda value: isinstance(value, list),
     "object": lambda value: isinstance(value, dict),
@@ -558,17 +571,6 @@ def _class_end(pattern: str, start: int) -> int:
 
 
 # Helpers ---------------------------------------------------------------------------------
-
-
-def _is_number(value: JSONValue) -> bool:
-    return isinstance(value, (int, float)) and not isinstance(value, bool)
-
-
-def _is_integer(value: JSONValue) -> bool:
-    """JSON has one number type, so 3.0 is an integer; float() would overflow on big ints."""
-    if isinstance(value, float):
-        return value.is_integer()
-    return isinstance(value, int) and not isinstance(value, bool)
 
 
 def _json_equal(left: JSONValue, right: JSONValue) -> bool:

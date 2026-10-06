@@ -1,0 +1,3535 @@
+{
+  "candidates": [
+    {
+      "agreement": {
+        "cases": 15,
+        "exact_match_rate": 0.06666666666666667,
+        "mean_similarity": 0.7100000000000001,
+        "per_case": [
+          {
+            "case_id": "chat-01",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-02",
+            "similarity": 0.7493
+          },
+          {
+            "case_id": "chat-03",
+            "similarity": 0.6493
+          },
+          {
+            "case_id": "chat-04",
+            "similarity": 0.7093
+          },
+          {
+            "case_id": "chat-05",
+            "similarity": 0.6293
+          },
+          {
+            "case_id": "chat-06",
+            "similarity": 0.7293
+          },
+          {
+            "case_id": "chat-07",
+            "similarity": 0.6693
+          },
+          {
+            "case_id": "chat-08",
+            "similarity": 0.6893
+          },
+          {
+            "case_id": "chat-09",
+            "similarity": 0.7493
+          },
+          {
+            "case_id": "chat-10",
+            "similarity": 0.6493
+          },
+          {
+            "case_id": "chat-11",
+            "similarity": 0.7093
+          },
+          {
+            "case_id": "chat-12",
+            "similarity": 0.6293
+          },
+          {
+            "case_id": "chat-13",
+            "similarity": 0.7293
+          },
+          {
+            "case_id": "chat-14",
+            "similarity": 0.6693
+          },
+          {
+            "case_id": "chat-15",
+            "similarity": 0.6891
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "openai",
+        "chat_template": null,
+        "context_length": null,
+        "details": [],
+        "exact_token_ids": false,
+        "model": "example-q2_k",
+        "size_bytes": 3180000000,
+        "supports_logprobs": true,
+        "template_dialect": "unknown",
+        "weights_id": "sha256:5f1c0e7a"
+      },
+      "logit": {
+        "exact_token_ids": false,
+        "kld_max": 7.9,
+        "kld_mean": 0.21399999999999997,
+        "kld_p99": 2.41,
+        "per_prompt": [
+          {
+            "kld_mean": 0.075669,
+            "positions": 64,
+            "prompt_id": "score-01",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.274298,
+            "positions": 64,
+            "prompt_id": "score-02",
+            "top1_matches": 47
+          },
+          {
+            "kld_mean": 0.160796,
+            "positions": 64,
+            "prompt_id": "score-03",
+            "top1_matches": 54
+          },
+          {
+            "kld_mean": 0.359425,
+            "positions": 64,
+            "prompt_id": "score-04",
+            "top1_matches": 42
+          },
+          {
+            "kld_mean": 0.245923,
+            "positions": 64,
+            "prompt_id": "score-05",
+            "top1_matches": 49
+          },
+          {
+            "kld_mean": 0.13242,
+            "positions": 64,
+            "prompt_id": "score-06",
+            "top1_matches": 56
+          },
+          {
+            "kld_mean": 0.33105,
+            "positions": 64,
+            "prompt_id": "score-07",
+            "top1_matches": 44
+          },
+          {
+            "kld_mean": 0.217547,
+            "positions": 64,
+            "prompt_id": "score-08",
+            "top1_matches": 51
+          },
+          {
+            "kld_mean": 0.104044,
+            "positions": 64,
+            "prompt_id": "score-09",
+            "top1_matches": 57
+          },
+          {
+            "kld_mean": 0.302674,
+            "positions": 64,
+            "prompt_id": "score-10",
+            "top1_matches": 46
+          },
+          {
+            "kld_mean": 0.189171,
+            "positions": 64,
+            "prompt_id": "score-11",
+            "top1_matches": 52
+          },
+          {
+            "kld_mean": 0.075669,
+            "positions": 64,
+            "prompt_id": "score-12",
+            "top1_matches": 60
+          },
+          {
+            "kld_mean": 0.274298,
+            "positions": 64,
+            "prompt_id": "score-13",
+            "top1_matches": 48
+          },
+          {
+            "kld_mean": 0.160796,
+            "positions": 64,
+            "prompt_id": "score-14",
+            "top1_matches": 55
+          },
+          {
+            "kld_mean": 0.359425,
+            "positions": 64,
+            "prompt_id": "score-15",
+            "top1_matches": 43
+          },
+          {
+            "kld_mean": 0.245923,
+            "positions": 64,
+            "prompt_id": "score-16",
+            "top1_matches": 50
+          },
+          {
+            "kld_mean": 0.13242,
+            "positions": 64,
+            "prompt_id": "score-17",
+            "top1_matches": 57
+          },
+          {
+            "kld_mean": 0.33105,
+            "positions": 64,
+            "prompt_id": "score-18",
+            "top1_matches": 45
+          },
+          {
+            "kld_mean": 0.217547,
+            "positions": 64,
+            "prompt_id": "score-19",
+            "top1_matches": 52
+          },
+          {
+            "kld_mean": 0.104044,
+            "positions": 64,
+            "prompt_id": "score-20",
+            "top1_matches": 58
+          },
+          {
+            "kld_mean": 0.302674,
+            "positions": 64,
+            "prompt_id": "score-21",
+            "top1_matches": 47
+          },
+          {
+            "kld_mean": 0.189171,
+            "positions": 64,
+            "prompt_id": "score-22",
+            "top1_matches": 53
+          },
+          {
+            "kld_mean": 0.075669,
+            "positions": 64,
+            "prompt_id": "score-23",
+            "top1_matches": 60
+          },
+          {
+            "kld_mean": 0.274297,
+            "positions": 64,
+            "prompt_id": "score-24",
+            "top1_matches": 48
+          }
+        ],
+        "positions": 1536,
+        "prompts": 24,
+        "top1_agreement": 0.802734375
+      },
+      "outcomes": [
+        {
+          "case_id": "json-01",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-02",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-03",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-04",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-05",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-06",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-07",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-08",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-09",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-10",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-11",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-12",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-13",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-14",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-15",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-16",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-17",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-18",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-19",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-20",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-21",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-22",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-23",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-24",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-25",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-26",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-27",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-28",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-29",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-30",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-31",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-32",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-33",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-34",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-35",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-36",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-37",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-38",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-39",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-40",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "tools-01",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-02",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-03",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-04",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-05",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-06",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-07",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-08",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-09",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-10",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-11",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-12",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-13",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-14",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-15",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-16",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-17",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-18",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-19",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-20",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-21",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-22",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-23",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-24",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-25",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-26",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-27",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-28",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-29",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-30",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-31",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-32",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-33",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-34",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-35",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-36",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-37",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-38",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-39",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-40",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "code-01",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-02",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-03",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-04",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-05",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-06",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-07",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-08",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-09",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-10",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-11",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-12",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-13",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-14",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-15",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-16",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-17",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-18",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-19",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-20",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        }
+      ],
+      "perf": {
+        "mean_latency_seconds": 1.5,
+        "source": "wall_clock",
+        "tokens_per_second": 88.0
+      },
+      "preflight": [],
+      "spec": {
+        "api_key_env": "EXAMPLE_API_KEY",
+        "base_url": "http://127.0.0.1:1234/v1",
+        "kind": "openai",
+        "label": "example-q2_k",
+        "model": "example-q2_k"
+      },
+      "tasks": [
+        {
+          "failures": [
+            {
+              "case_id": "json-02",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            },
+            {
+              "case_id": "json-05",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            },
+            {
+              "case_id": "json-09",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            }
+          ],
+          "kind": "json",
+          "passed": 31,
+          "rate": 0.775,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "tools-01",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-03",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-04",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            }
+          ],
+          "kind": "tools",
+          "passed": 22,
+          "rate": 0.55,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "code-01",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-02",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-04",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            }
+          ],
+          "kind": "code",
+          "passed": 9,
+          "rate": 0.45,
+          "skipped": 0,
+          "total": 20
+        }
+      ]
+    },
+    {
+      "agreement": {
+        "cases": 15,
+        "exact_match_rate": 0.4,
+        "mean_similarity": 0.88,
+        "per_case": [
+          {
+            "case_id": "chat-01",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-02",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-03",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-04",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-05",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-06",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-07",
+            "similarity": 0.86
+          },
+          {
+            "case_id": "chat-08",
+            "similarity": 0.76
+          },
+          {
+            "case_id": "chat-09",
+            "similarity": 0.82
+          },
+          {
+            "case_id": "chat-10",
+            "similarity": 0.74
+          },
+          {
+            "case_id": "chat-11",
+            "similarity": 0.84
+          },
+          {
+            "case_id": "chat-12",
+            "similarity": 0.78
+          },
+          {
+            "case_id": "chat-13",
+            "similarity": 0.8
+          },
+          {
+            "case_id": "chat-14",
+            "similarity": 0.86
+          },
+          {
+            "case_id": "chat-15",
+            "similarity": 0.74
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "ollama",
+        "chat_template": "{{ messages }}",
+        "context_length": 2048,
+        "details": [
+          [
+            "quantization",
+            "Q4_K_M"
+          ]
+        ],
+        "exact_token_ids": true,
+        "model": "example:q4_k_m",
+        "size_bytes": 4920000000,
+        "supports_logprobs": true,
+        "template_dialect": "go",
+        "weights_id": "sha256:9b2d4a11"
+      },
+      "logit": {
+        "exact_token_ids": true,
+        "kld_max": 1.87,
+        "kld_mean": 0.029100000000000004,
+        "kld_p99": 0.312,
+        "per_prompt": [
+          {
+            "kld_mean": 0.01029,
+            "positions": 64,
+            "prompt_id": "score-01",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.037299,
+            "positions": 64,
+            "prompt_id": "score-02",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.021865,
+            "positions": 64,
+            "prompt_id": "score-03",
+            "top1_matches": 61
+          },
+          {
+            "kld_mean": 0.048875,
+            "positions": 64,
+            "prompt_id": "score-04",
+            "top1_matches": 57
+          },
+          {
+            "kld_mean": 0.033441,
+            "positions": 64,
+            "prompt_id": "score-05",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.018007,
+            "positions": 64,
+            "prompt_id": "score-06",
+            "top1_matches": 61
+          },
+          {
+            "kld_mean": 0.045017,
+            "positions": 64,
+            "prompt_id": "score-07",
+            "top1_matches": 58
+          },
+          {
+            "kld_mean": 0.029582,
+            "positions": 64,
+            "prompt_id": "score-08",
+            "top1_matches": 60
+          },
+          {
+            "kld_mean": 0.014148,
+            "positions": 64,
+            "prompt_id": "score-09",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.041158,
+            "positions": 64,
+            "prompt_id": "score-10",
+            "top1_matches": 58
+          },
+          {
+            "kld_mean": 0.025724,
+            "positions": 64,
+            "prompt_id": "score-11",
+            "top1_matches": 60
+          },
+          {
+            "kld_mean": 0.01029,
+            "positions": 64,
+            "prompt_id": "score-12",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.037299,
+            "positions": 64,
+            "prompt_id": "score-13",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.021865,
+            "positions": 64,
+            "prompt_id": "score-14",
+            "top1_matches": 61
+          },
+          {
+            "kld_mean": 0.048875,
+            "positions": 64,
+            "prompt_id": "score-15",
+            "top1_matches": 58
+          },
+          {
+            "kld_mean": 0.033441,
+            "positions": 64,
+            "prompt_id": "score-16",
+            "top1_matches": 60
+          },
+          {
+            "kld_mean": 0.018007,
+            "positions": 64,
+            "prompt_id": "score-17",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.045017,
+            "positions": 64,
+            "prompt_id": "score-18",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.029582,
+            "positions": 64,
+            "prompt_id": "score-19",
+            "top1_matches": 61
+          },
+          {
+            "kld_mean": 0.014148,
+            "positions": 64,
+            "prompt_id": "score-20",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.041158,
+            "positions": 64,
+            "prompt_id": "score-21",
+            "top1_matches": 59
+          },
+          {
+            "kld_mean": 0.025724,
+            "positions": 64,
+            "prompt_id": "score-22",
+            "top1_matches": 61
+          },
+          {
+            "kld_mean": 0.01029,
+            "positions": 64,
+            "prompt_id": "score-23",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.037298,
+            "positions": 64,
+            "prompt_id": "score-24",
+            "top1_matches": 60
+          }
+        ],
+        "positions": 1536,
+        "prompts": 24,
+        "top1_agreement": 0.9407552083333334
+      },
+      "outcomes": [
+        {
+          "case_id": "json-01",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-02",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-03",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-04",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-05",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-06",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-07",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-08",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-09",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-10",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-11",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-12",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-13",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-14",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-15",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-16",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-17",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-18",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-19",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-20",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-21",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-22",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-23",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-24",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-25",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-26",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-27",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-28",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-29",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-30",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-31",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-32",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-33",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-34",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-35",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-36",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-37",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-38",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-39",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-40",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "tools-01",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-02",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-03",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-04",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-05",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-06",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-07",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-08",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-09",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-10",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-11",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-12",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-13",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-14",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-15",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-16",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-17",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-18",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-19",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-20",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-21",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-22",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-23",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-24",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-25",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-26",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-27",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-28",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-29",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-30",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-31",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-32",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-33",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-34",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-35",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-36",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-37",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-38",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-39",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-40",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "code-01",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-02",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-03",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-04",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-05",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-06",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-07",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-08",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-09",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-10",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-11",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-12",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-13",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-14",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-15",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-16",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-17",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-18",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-19",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-20",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        }
+      ],
+      "perf": {
+        "mean_latency_seconds": 2.1,
+        "source": "server",
+        "tokens_per_second": 61.2
+      },
+      "preflight": [
+        {
+          "check": "context",
+          "fix": "Set num_ctx to 8192 in a Modelfile or pass --num-ctx 8192.",
+          "message": "context window is 2048 tokens, below the 6000-token probe; long prompts will not fit",
+          "severity": "warn"
+        }
+      ],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "example-q4_k_m",
+        "model": "example:q4_k_m"
+      },
+      "tasks": [
+        {
+          "failures": [
+            {
+              "case_id": "json-07",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            },
+            {
+              "case_id": "json-39",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            },
+            {
+              "case_id": "json-40",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            }
+          ],
+          "kind": "json",
+          "passed": 37,
+          "rate": 0.925,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "tools-05",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-12",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-37",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            }
+          ],
+          "kind": "tools",
+          "passed": 34,
+          "rate": 0.85,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "code-03",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-18",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-19",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            }
+          ],
+          "kind": "code",
+          "passed": 16,
+          "rate": 0.8,
+          "skipped": 0,
+          "total": 20
+        }
+      ]
+    },
+    {
+      "agreement": {
+        "cases": 15,
+        "exact_match_rate": 0.6,
+        "mean_similarity": 0.94,
+        "per_case": [
+          {
+            "case_id": "chat-01",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-02",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-03",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-04",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-05",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-06",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-07",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-08",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-09",
+            "similarity": 1.0
+          },
+          {
+            "case_id": "chat-10",
+            "similarity": 0.91
+          },
+          {
+            "case_id": "chat-11",
+            "similarity": 0.81
+          },
+          {
+            "case_id": "chat-12",
+            "similarity": 0.87
+          },
+          {
+            "case_id": "chat-13",
+            "similarity": 0.79
+          },
+          {
+            "case_id": "chat-14",
+            "similarity": 0.89
+          },
+          {
+            "case_id": "chat-15",
+            "similarity": 0.83
+          }
+        ]
+      },
+      "errors": [],
+      "info": {
+        "backend": "llamacpp",
+        "chat_template": "{{ messages }}",
+        "context_length": 8192,
+        "details": [
+          [
+            "quantization",
+            "Q8_0"
+          ],
+          [
+            "file_size",
+            "8.5 GB"
+          ]
+        ],
+        "exact_token_ids": true,
+        "model": "example-q8_0.gguf",
+        "size_bytes": 8540000000,
+        "supports_logprobs": true,
+        "template_dialect": "jinja",
+        "weights_id": "sha256:c03e8f52"
+      },
+      "logit": {
+        "exact_token_ids": true,
+        "kld_max": 0.391,
+        "kld_mean": 0.0041199999999999995,
+        "kld_p99": 0.0587,
+        "per_prompt": [
+          {
+            "kld_mean": 0.001457,
+            "positions": 64,
+            "prompt_id": "score-01",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.005281,
+            "positions": 64,
+            "prompt_id": "score-02",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.003096,
+            "positions": 64,
+            "prompt_id": "score-03",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.00692,
+            "positions": 64,
+            "prompt_id": "score-04",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.004735,
+            "positions": 64,
+            "prompt_id": "score-05",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.002549,
+            "positions": 64,
+            "prompt_id": "score-06",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.006373,
+            "positions": 64,
+            "prompt_id": "score-07",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.004188,
+            "positions": 64,
+            "prompt_id": "score-08",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.002003,
+            "positions": 64,
+            "prompt_id": "score-09",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.005827,
+            "positions": 64,
+            "prompt_id": "score-10",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.003642,
+            "positions": 64,
+            "prompt_id": "score-11",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.001457,
+            "positions": 64,
+            "prompt_id": "score-12",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.005281,
+            "positions": 64,
+            "prompt_id": "score-13",
+            "top1_matches": 62
+          },
+          {
+            "kld_mean": 0.003096,
+            "positions": 64,
+            "prompt_id": "score-14",
+            "top1_matches": 64
+          },
+          {
+            "kld_mean": 0.00692,
+            "positions": 64,
+            "prompt_id": "score-15",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.004735,
+            "positions": 64,
+            "prompt_id": "score-16",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.002549,
+            "positions": 64,
+            "prompt_id": "score-17",
+            "top1_matches": 64
+          },
+          {
+            "kld_mean": 0.006373,
+            "positions": 64,
+            "prompt_id": "score-18",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.004188,
+            "positions": 64,
+            "prompt_id": "score-19",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.002003,
+            "positions": 64,
+            "prompt_id": "score-20",
+            "top1_matches": 64
+          },
+          {
+            "kld_mean": 0.005827,
+            "positions": 64,
+            "prompt_id": "score-21",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.003642,
+            "positions": 64,
+            "prompt_id": "score-22",
+            "top1_matches": 63
+          },
+          {
+            "kld_mean": 0.001457,
+            "positions": 64,
+            "prompt_id": "score-23",
+            "top1_matches": 64
+          },
+          {
+            "kld_mean": 0.005281,
+            "positions": 64,
+            "prompt_id": "score-24",
+            "top1_matches": 63
+          }
+        ],
+        "positions": 1536,
+        "prompts": 24,
+        "top1_agreement": 0.9817708333333334
+      },
+      "outcomes": [
+        {
+          "case_id": "json-01",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-02",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-03",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-04",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-05",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-06",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-07",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-08",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-09",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-10",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-11",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-12",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-13",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-14",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-15",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-16",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-17",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-18",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-19",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-20",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-21",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-22",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-23",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-24",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-25",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-26",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-27",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-28",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-29",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-30",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-31",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-32",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-33",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-34",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-35",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-36",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-37",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-38",
+          "kind": "json",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "json-39",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "json-40",
+          "kind": "json",
+          "passed": false,
+          "reason": "missing required property 'total'"
+        },
+        {
+          "case_id": "tools-01",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-02",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-03",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-04",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-05",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-06",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-07",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-08",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-09",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-10",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-11",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-12",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-13",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-14",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-15",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-16",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-17",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-18",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-19",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-20",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-21",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-22",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-23",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-24",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-25",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-26",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-27",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-28",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-29",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-30",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-31",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-32",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-33",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-34",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-35",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-36",
+          "kind": "tools",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "tools-37",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-38",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-39",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "tools-40",
+          "kind": "tools",
+          "passed": false,
+          "reason": "called search_flights instead of book_flight"
+        },
+        {
+          "case_id": "code-01",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-02",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-03",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-04",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-05",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-06",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-07",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-08",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-09",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-10",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-11",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-12",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-13",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-14",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-15",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-16",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-17",
+          "kind": "code",
+          "passed": true,
+          "reason": ""
+        },
+        {
+          "case_id": "code-18",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-19",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        },
+        {
+          "case_id": "code-20",
+          "kind": "code",
+          "passed": false,
+          "reason": "assert add(2, 3) == 5 failed"
+        }
+      ],
+      "perf": {
+        "mean_latency_seconds": 3.4,
+        "source": "server",
+        "tokens_per_second": 38.7
+      },
+      "preflight": [],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:8081",
+        "kind": "llamacpp",
+        "label": "example-q8_0",
+        "model": ""
+      },
+      "tasks": [
+        {
+          "failures": [
+            {
+              "case_id": "json-39",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            },
+            {
+              "case_id": "json-40",
+              "kind": "json",
+              "passed": false,
+              "reason": "missing required property 'total'"
+            }
+          ],
+          "kind": "json",
+          "passed": 38,
+          "rate": 0.95,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "tools-05",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-37",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            },
+            {
+              "case_id": "tools-38",
+              "kind": "tools",
+              "passed": false,
+              "reason": "called search_flights instead of book_flight"
+            }
+          ],
+          "kind": "tools",
+          "passed": 35,
+          "rate": 0.875,
+          "skipped": 0,
+          "total": 40
+        },
+        {
+          "failures": [
+            {
+              "case_id": "code-18",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-19",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            },
+            {
+              "case_id": "code-20",
+              "kind": "code",
+              "passed": false,
+              "reason": "assert add(2, 3) == 5 failed"
+            }
+          ],
+          "kind": "code",
+          "passed": 17,
+          "rate": 0.85,
+          "skipped": 0,
+          "total": 20
+        }
+      ]
+    },
+    {
+      "agreement": null,
+      "errors": [
+        "model 'example:iq1_s' not found; pull it first"
+      ],
+      "info": null,
+      "logit": null,
+      "outcomes": [],
+      "perf": null,
+      "preflight": [],
+      "spec": {
+        "api_key_env": null,
+        "base_url": "http://127.0.0.1:11434",
+        "kind": "ollama",
+        "label": "example-iq1_s",
+        "model": "example:iq1_s"
+      },
+      "tasks": []
+    }
+  ],
+  "created_at": "2026-10-01T12:00:00Z",
+  "notes": [
+    "Synthetic data for tests; not a real measurement."
+  ],
+  "quantdiff_version": "0.1.0",
+  "reference": {
+    "agreement": null,
+    "errors": [],
+    "info": {
+      "backend": "llamacpp",
+      "chat_template": "{{ messages }}",
+      "context_length": 8192,
+      "details": [
+        [
+          "quantization",
+          "BF16"
+        ]
+      ],
+      "exact_token_ids": true,
+      "model": "example-bf16.gguf",
+      "size_bytes": 16068000000,
+      "supports_logprobs": true,
+      "template_dialect": "jinja",
+      "weights_id": "sha256:0a7714de"
+    },
+    "logit": null,
+    "outcomes": [
+      {
+        "case_id": "json-01",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-02",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-03",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-04",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-05",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-06",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-07",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-08",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-09",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-10",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-11",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-12",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-13",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-14",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-15",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-16",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-17",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-18",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-19",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-20",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-21",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-22",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-23",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-24",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-25",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-26",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-27",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-28",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-29",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-30",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-31",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-32",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-33",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-34",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-35",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-36",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-37",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-38",
+        "kind": "json",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "json-39",
+        "kind": "json",
+        "passed": false,
+        "reason": "missing required property 'total'"
+      },
+      {
+        "case_id": "json-40",
+        "kind": "json",
+        "passed": false,
+        "reason": "missing required property 'total'"
+      },
+      {
+        "case_id": "tools-01",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-02",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-03",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-04",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-05",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-06",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-07",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-08",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-09",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-10",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-11",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-12",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-13",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-14",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-15",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-16",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-17",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-18",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-19",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-20",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-21",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-22",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-23",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-24",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-25",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-26",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-27",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-28",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-29",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-30",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-31",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-32",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-33",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-34",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-35",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-36",
+        "kind": "tools",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "tools-37",
+        "kind": "tools",
+        "passed": false,
+        "reason": "called search_flights instead of book_flight"
+      },
+      {
+        "case_id": "tools-38",
+        "kind": "tools",
+        "passed": false,
+        "reason": "called search_flights instead of book_flight"
+      },
+      {
+        "case_id": "tools-39",
+        "kind": "tools",
+        "passed": false,
+        "reason": "called search_flights instead of book_flight"
+      },
+      {
+        "case_id": "tools-40",
+        "kind": "tools",
+        "passed": false,
+        "reason": "called search_flights instead of book_flight"
+      },
+      {
+        "case_id": "code-01",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-02",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-03",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-04",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-05",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-06",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-07",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-08",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-09",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-10",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-11",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-12",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-13",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-14",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-15",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-16",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-17",
+        "kind": "code",
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "case_id": "code-18",
+        "kind": "code",
+        "passed": false,
+        "reason": "assert add(2, 3) == 5 failed"
+      },
+      {
+        "case_id": "code-19",
+        "kind": "code",
+        "passed": false,
+        "reason": "assert add(2, 3) == 5 failed"
+      },
+      {
+        "case_id": "code-20",
+        "kind": "code",
+        "passed": false,
+        "reason": "assert add(2, 3) == 5 failed"
+      }
+    ],
+    "perf": {
+      "mean_latency_seconds": 6.2,
+      "source": "server",
+      "tokens_per_second": 21.4
+    },
+    "preflight": [
+      {
+        "check": "context",
+        "fix": null,
+        "message": "context length 8192 fits every case",
+        "severity": "ok"
+      }
+    ],
+    "spec": {
+      "api_key_env": null,
+      "base_url": "http://127.0.0.1:8080",
+      "kind": "llamacpp",
+      "label": "example-bf16",
+      "model": ""
+    },
+    "tasks": [
+      {
+        "failures": [],
+        "kind": "json",
+        "passed": 38,
+        "rate": 0.95,
+        "skipped": 0,
+        "total": 40
+      },
+      {
+        "failures": [],
+        "kind": "tools",
+        "passed": 36,
+        "rate": 0.9,
+        "skipped": 0,
+        "total": 40
+      },
+      {
+        "failures": [],
+        "kind": "code",
+        "passed": 17,
+        "rate": 0.85,
+        "skipped": 0,
+        "total": 20
+      }
+    ]
+  },
+  "schema_version": 2,
+  "settings": {
+    "allow_code_exec": true,
+    "longest_prompt_tokens": 1400,
+    "max_size_bytes": null,
+    "prompts_file": null,
+    "score_tokens": 64,
+    "seed": 0,
+    "suites": [
+      "json",
+      "tools",
+      "code",
+      "chat"
+    ],
+    "top_k": 20
+  },
+  "title": "Synthetic example: example-model quants"
+}

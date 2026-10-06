@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quantdiff"
+dynamic = ["version"]
+description = "Find out which download of a local model gives the best answers on your own prompts."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "quantdiff contributors" }]
+keywords = ["llm", "quantization", "gguf", "ollama", "llama.cpp", "evaluation", "kl-divergence"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+# Deliberately empty: quantdiff runs on the standard library only.
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "mypy==1.18.2",
+    "pytest==8.4.2",
+    "ruff==0.13.3",
+]
+
+[project.scripts]
+quantdiff = "quantdiff.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/quantdiff/quantdiff"
+Issues = "https://github.com/quantdiff/quantdiff/issues"
+
+[tool.hatch.version]
+path = "src/quantdiff/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quantdiff"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/quantdiff", "tests", "docs", "README.md", "LICENSE", "SECURITY.md", "CHANGELOG.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F", "I", "N", "UP", "B", "A", "C4", "SIM", "RET", "PIE", "PT",
+    "PTH", "TID", "RUF", "S", "BLE", "FBT", "ERA", "PL", "TRY", "PERF", "LOG", "G",
+]
+ignore = [
+    "PLR0913",  # explicit keyword-only parameters are clearer than option bags here
+    "PLR2004",  # thresholds are named where they matter; tests use literals
+    "TRY003",   # short contextual messages on raise are intended
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S603", "PLR0915", "FBT", "PLC0415"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "parents"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unreachable = true
+files = ["src", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+markers = [
+    "live: needs a running local model server (deselected by default)",
+]
+filterwarnings = ["error"]

@@ -1,0 +1,12 @@
+{
+  "response": "",
+  "done": true,
+  "done_reason": "length",
+  "total_duration": 14825900,
+  "load_duration": 5194000,
+  "prompt_eval_count": 268,
+  "prompt_eval_cached_count": 267,
+  "prompt_eval_duration": 5829000,
+  "eval_count": 1,
+  "eval_duration": 1000
+}

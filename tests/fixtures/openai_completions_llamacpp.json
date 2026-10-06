@@ -1,0 +1,62 @@
+{
+  "choices": [
+    {
+      "text": " य",
+      "index": 0,
+      "logprobs": {
+        "content": [
+          {
+            "id": 107,
+            "token": " य",
+            "bytes": [
+              32,
+              224,
+              164,
+              175
+            ],
+            "logprob": -1.5552624464035034,
+            "top_logprobs": [
+              {
+                "id": 107,
+                "token": "�",
+                "bytes": [
+                  175
+                ],
+                "logprob": -1.5552624464035034
+              },
+              {
+                "id": 229,
+                "token": "�",
+                "bytes": [
+                  135
+                ],
+                "logprob": -2.1439578533172607
+              },
+              {
+                "id": 113,
+                "token": "�",
+                "bytes": [
+                  181
+                ],
+                "logprob": -2.259718656539917
+              }
+            ]
+          }
+        ]
+      },
+      "finish_reason": "length"
+    }
+  ],
+  "created": 1791223748,
+  "system_fingerprint": "b11425-e117148a4",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 2,
+    "prompt_tokens": 268,
+    "total_tokens": 270,
+    "prompt_tokens_details": {
+      "cached_tokens": 267
+    }
+  },
+  "id": "chatcmpl-6dtWtKF8MMZj53ND4zUvu4yP6vSkmyHW"
+}

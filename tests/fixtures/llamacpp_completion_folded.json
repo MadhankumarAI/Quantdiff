@@ -1,0 +1,93 @@
+{
+  "content": " यह",
+  "tokens": [],
+  "stop": true,
+  "tokens_predicted": 3,
+  "tokens_evaluated": 268,
+  "has_new_line": false,
+  "truncated": false,
+  "stop_type": "limit",
+  "stopping_word": "",
+  "tokens_cached": 270,
+  "completion_probabilities": [
+    {
+      "id": 107,
+      "token": " य",
+      "bytes": [
+        32,
+        224,
+        164,
+        175
+      ],
+      "logprob": -1.5552624464035034,
+      "top_logprobs": [
+        {
+          "id": 107,
+          "token": "�",
+          "bytes": [
+            175
+          ],
+          "logprob": -1.5552624464035034
+        },
+        {
+          "id": 229,
+          "token": "�",
+          "bytes": [
+            135
+          ],
+          "logprob": -2.1439578533172607
+        },
+        {
+          "id": 113,
+          "token": "�",
+          "bytes": [
+            181
+          ],
+          "logprob": -2.259718656539917
+        }
+      ]
+    },
+    {
+      "id": 93948,
+      "token": "ह",
+      "bytes": [
+        224,
+        164,
+        185
+      ],
+      "logprob": -0.4603831470012665,
+      "top_logprobs": [
+        {
+          "id": 93948,
+          "token": "ह",
+          "bytes": [
+            224,
+            164,
+            185
+          ],
+          "logprob": -0.4603831470012665
+        },
+        {
+          "id": 34370,
+          "token": "े",
+          "bytes": [
+            224,
+            165,
+            135
+          ],
+          "logprob": -1.8954988718032837
+        },
+        {
+          "id": 54575,
+          "token": "ो",
+          "bytes": [
+            224,
+            165,
+            139
+          ],
+          "logprob": -2.547377347946167
+        }
+      ]
+    }
+  ]
+}

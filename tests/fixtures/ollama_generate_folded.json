@@ -1,0 +1,91 @@
+{
+  "response": " यह",
+  "done": true,
+  "done_reason": "length",
+  "total_duration": 3959297900,
+  "load_duration": 3581879400,
+  "prompt_eval_count": 268,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 331451000,
+  "eval_count": 3,
+  "eval_duration": 41686000,
+  "logprobs": [
+    {
+      "token": " य",
+      "logprob": -1.5935224294662476,
+      "bytes": [
+        32,
+        224,
+        164,
+        175
+      ],
+      "top_logprobs": [
+        {
+          "token": "�",
+          "logprob": -1.5935224294662476,
+          "bytes": [
+            239,
+            191,
+            189
+          ]
+        },
+        {
+          "token": "�",
+          "logprob": -2.0840885639190674,
+          "bytes": [
+            239,
+            191,
+            189
+          ]
+        },
+        {
+          "token": "�",
+          "logprob": -2.207444429397583,
+          "bytes": [
+            239,
+            191,
+            189
+          ]
+        }
+      ]
+    },
+    {
+      "token": "ह",
+      "logprob": -0.42422962188720703,
+      "bytes": [
+        224,
+        164,
+        185
+      ],
+      "top_logprobs": [
+        {
+          "token": "ह",
+          "logprob": -0.42422962188720703,
+          "bytes": [
+            224,
+            164,
+            185
+          ]
+        },
+        {
+          "token": "े",
+          "logprob": -2.023320198059082,
+          "bytes": [
+            224,
+            165,
+            135
+          ]
+        },
+        {
+          "token": "ो",
+          "logprob": -2.5732011795043945,
+          "bytes": [
+            224,
+            165,
+            139
+          ]
+        }
+      ]
+    }
+  ]
+}

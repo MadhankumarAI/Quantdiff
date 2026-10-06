@@ -1,0 +1,22 @@
+{
+  "choices": [
+    {
+      "text": " �",
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "created": 1791223748,
+  "system_fingerprint": "b11425-e117148a4",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 1,
+    "prompt_tokens": 268,
+    "total_tokens": 269,
+    "prompt_tokens_details": {
+      "cached_tokens": 267
+    }
+  },
+  "id": "chatcmpl-li4xHYDpZaxJxv2aa1OTzkhVowOMzLKx"
+}

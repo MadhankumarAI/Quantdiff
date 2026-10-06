@@ -1,0 +1,48 @@
+{
+  "content": "�",
+  "tokens": [],
+  "stop": true,
+  "tokens_predicted": 1,
+  "tokens_evaluated": 269,
+  "has_new_line": false,
+  "truncated": false,
+  "stop_type": "limit",
+  "stopping_word": "",
+  "tokens_cached": 269,
+  "completion_probabilities": [
+    {
+      "id": 107,
+      "token": "�",
+      "bytes": [
+        175
+      ],
+      "logprob": -1.5552624464035034,
+      "top_logprobs": [
+        {
+          "id": 107,
+          "token": "�",
+          "bytes": [
+            175
+          ],
+          "logprob": -1.5552624464035034
+        },
+        {
+          "id": 229,
+          "token": "�",
+          "bytes": [
+            135
+          ],
+          "logprob": -2.1439578533172607
+        },
+        {
+          "id": 113,
+          "token": "�",
+          "bytes": [
+            181
+          ],
+          "logprob": -2.259718656539917
+        }
+      ]
+    }
+  ]
+}

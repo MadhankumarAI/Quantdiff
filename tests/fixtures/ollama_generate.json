@@ -1,0 +1,136 @@
+{
+  "model": "qwen2.5:0.5b-instruct-q4_K_M",
+  "created_at": "2026-10-03T08:35:10.0516741Z",
+  "response": " ______. A",
+  "done": true,
+  "done_reason": "length",
+  "total_duration": 12728294400,
+  "load_duration": 12464401700,
+  "prompt_eval_count": 5,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 97197000,
+  "eval_count": 3,
+  "eval_duration": 147350000,
+  "logprobs": [
+    {
+      "token": " ______",
+      "logprob": -1.4817551374435425,
+      "bytes": [
+        32,
+        95,
+        95,
+        95,
+        95,
+        95,
+        95
+      ],
+      "top_logprobs": [
+        {
+          "token": " ______",
+          "logprob": -1.4817551374435425,
+          "bytes": [
+            32,
+            95,
+            95,
+            95,
+            95,
+            95,
+            95
+          ]
+        },
+        {
+          "token": " Paris",
+          "logprob": -1.573405146598816,
+          "bytes": [
+            32,
+            80,
+            97,
+            114,
+            105,
+            115
+          ]
+        },
+        {
+          "token": " ____",
+          "logprob": -2.463027000427246,
+          "bytes": [
+            32,
+            95,
+            95,
+            95,
+            95
+          ]
+        }
+      ]
+    },
+    {
+      "token": ".",
+      "logprob": -1.3773853778839111,
+      "bytes": [
+        46
+      ],
+      "top_logprobs": [
+        {
+          "token": ".",
+          "logprob": -1.3773853778839111,
+          "bytes": [
+            46
+          ]
+        },
+        {
+          "token": ".\n",
+          "logprob": -1.4690029621124268,
+          "bytes": [
+            46,
+            10
+          ]
+        },
+        {
+          "token": "__",
+          "logprob": -2.0345356464385986,
+          "bytes": [
+            95,
+            95
+          ]
+        }
+      ]
+    },
+    {
+      "token": " A",
+      "logprob": -0.843553364276886,
+      "bytes": [
+        32,
+        65
+      ],
+      "top_logprobs": [
+        {
+          "token": " A",
+          "logprob": -0.843553364276886,
+          "bytes": [
+            32,
+            65
+          ]
+        },
+        {
+          "token": " It",
+          "logprob": -2.675403356552124,
+          "bytes": [
+            32,
+            73,
+            116
+          ]
+        },
+        {
+          "token": " The",
+          "logprob": -2.7706146240234375,
+          "bytes": [
+            32,
+            84,
+            104,
+            101
+          ]
+        }
+      ]
+    }
+  ]
+}

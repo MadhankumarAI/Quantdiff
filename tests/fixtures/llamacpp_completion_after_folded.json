@@ -1,0 +1,56 @@
+{
+  "content": "ह",
+  "tokens": [],
+  "stop": true,
+  "tokens_predicted": 1,
+  "tokens_evaluated": 270,
+  "has_new_line": false,
+  "truncated": false,
+  "stop_type": "limit",
+  "stopping_word": "",
+  "tokens_cached": 270,
+  "completion_probabilities": [
+    {
+      "id": 93948,
+      "token": "ह",
+      "bytes": [
+        224,
+        164,
+        185
+      ],
+      "logprob": -0.4603831470012665,
+      "top_logprobs": [
+        {
+          "id": 93948,
+          "token": "ह",
+          "bytes": [
+            224,
+            164,
+            185
+          ],
+          "logprob": -0.4603831470012665
+        },
+        {
+          "id": 34370,
+          "token": "े",
+          "bytes": [
+            224,
+            165,
+            135
+          ],
+          "logprob": -1.8954988718032837
+        },
+        {
+          "id": 54575,
+          "token": "ो",
+          "bytes": [
+            224,
+            165,
+            139
+          ],
+          "logprob": -2.547377347946167
+        }
+      ]
+    }
+  ]
+}

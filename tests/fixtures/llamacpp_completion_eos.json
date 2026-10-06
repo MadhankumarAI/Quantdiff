@@ -1,0 +1,49 @@
+{
+  "content": "",
+  "tokens": [],
+  "stop": true,
+  "tokens_predicted": 1,
+  "tokens_evaluated": 19,
+  "has_new_line": false,
+  "truncated": false,
+  "stop_type": "eos",
+  "stopping_word": "",
+  "tokens_cached": 19,
+  "completion_probabilities": [
+    {
+      "id": 151645,
+      "token": "",
+      "bytes": [],
+      "logprob": -0.03693324327468872,
+      "top_logprobs": [
+        {
+          "id": 151645,
+          "token": "",
+          "bytes": [],
+          "logprob": -0.03693324327468872
+        },
+        {
+          "id": 2160,
+          "token": " Is",
+          "bytes": [
+            32,
+            73,
+            115
+          ],
+          "logprob": -4.07724142074585
+        },
+        {
+          "id": 6771,
+          "token": " Let",
+          "bytes": [
+            32,
+            76,
+            101,
+            116
+          ],
+          "logprob": -5.284148693084717
+        }
+      ]
+    }
+  ]
+}

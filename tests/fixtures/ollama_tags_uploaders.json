@@ -1,0 +1,220 @@
+{
+  "models": [
+    {
+      "name": "hf.co/bartowski/Qwen_Qwen3-8B-GGUF:Q8_0",
+      "model": "hf.co/bartowski/Qwen_Qwen3-8B-GGUF:Q8_0",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 8709519584,
+      "digest": "b0d7c3be1e1f9b5c1a0a55b7b8f03e4ba0f2c0a8cdb0ef71e4a3b8c1d2e3f405",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q8_0",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "hf.co/bartowski/Qwen_Qwen3-8B-GGUF:Q4_K_M",
+      "model": "hf.co/bartowski/Qwen_Qwen3-8B-GGUF:Q4_K_M",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5027785440,
+      "digest": "b14ad2f5c6e7d8091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f7081",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "hf.co/unsloth/Qwen3-8B-GGUF:UD-Q4_K_XL",
+      "model": "hf.co/unsloth/Qwen3-8B-GGUF:UD-Q4_K_XL",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5135890208,
+      "digest": "e9e0b45d1f6a3c2b7d8e9f0a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "hf.co/unsloth/Qwen3-8B-GGUF:Q4_K_M",
+      "model": "hf.co/unsloth/Qwen3-8B-GGUF:Q4_K_M",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5027783456,
+      "digest": "e6a9f2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "qwen3:latest",
+      "model": "qwen3:latest",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5225388164,
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "qwen3:8b",
+      "model": "qwen3:8b",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5225388164,
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "mychat:latest",
+      "model": "mychat:latest",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 5225388211,
+      "digest": "c4f1d2e3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "hf.co/Qwen/Qwen2.5-3B-GGUF:Q8_0",
+      "model": "hf.co/Qwen/Qwen2.5-3B-GGUF:Q8_0",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 3285476288,
+      "digest": "d3b5c7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9b1c3d5e7f9a1b3c5",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q8_0",
+        "context_length": 32768,
+        "embedding_length": 2048
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "qwen2.5:3b",
+      "model": "qwen2.5:3b",
+      "modified_at": "2026-10-04T09:12:31.4410286+05:30",
+      "size": 1929912432,
+      "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "3.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 2048
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    }
+  ]
+}

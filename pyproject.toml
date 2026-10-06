@@ -41,8 +41,8 @@ dev = [
 quantdiff = "quantdiff.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/quantdiff/quantdiff"
-Issues = "https://github.com/quantdiff/quantdiff/issues"
+Homepage = "https://github.com/MadhankumarAI/Quantdiff"
+Issues = "https://github.com/MadhankumarAI/Quantdiff/issues"
 
 [tool.hatch.version]
 path = "src/quantdiff/_version.py"

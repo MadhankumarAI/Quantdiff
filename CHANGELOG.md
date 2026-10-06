@@ -36,4 +36,4 @@ First public release.
 - Python API: `quantdiff.compare`, `quantdiff.verdict`, `quantdiff.render_html`.
 - Zero runtime dependencies.
 
-[0.1.0]: https://github.com/quantdiff/quantdiff/releases/tag/v0.1.0
+[0.1.0]: https://github.com/MadhankumarAI/Quantdiff/releases/tag/v0.1.0

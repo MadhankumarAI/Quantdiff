@@ -628,6 +628,7 @@ def _measure(
     result: CandidateResult,
     index: int,
     name: str,
+    *,
     reference: CandidateResult,
     reference_outcomes: dict[TaskKind, dict[str, bool]],
     reliable: frozenset[TaskKind],
@@ -758,7 +759,13 @@ def judge(report: Report, *, scoring: Sequence[ScoringPrompt] = ()) -> Verdict:
     )
     candidates = [
         _measure(
-            result, index, names[result.spec.label], reference, ref_outcomes, reliable, thresholds
+            result,
+            index,
+            names[result.spec.label],
+            reference=reference,
+            reference_outcomes=ref_outcomes,
+            reliable=reliable,
+            thresholds=thresholds,
         )
         for index, result in enumerate(report.candidates)
     ]

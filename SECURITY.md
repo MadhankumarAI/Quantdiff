@@ -84,7 +84,7 @@ file and its provenance from PyPI:
 
 ```
 pipx run pypi-attestations verify pypi \
-  --repository https://github.com/quantdiff/quantdiff \
+  --repository https://github.com/MadhankumarAI/Quantdiff \
   pypi:quantdiff-0.1.0-py3-none-any.whl
 ```
 

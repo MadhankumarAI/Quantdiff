@@ -30,15 +30,8 @@ _ERROR_BODY_PREVIEW: Final = 300
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
     """Refuse redirects so a server cannot bounce requests, and their headers, elsewhere."""
 
-    def redirect_request(
-        self,
-        req: urllib.request.Request,
-        fp: object,
-        code: int,
-        msg: str,
-        headers: object,
-        newurl: str,
-    ) -> None:
+    def redirect_request(self, *args: object, **kwargs: object) -> None:
+        # urllib calls this with six fixed arguments; none matter, every redirect is refused.
         return None
 
 

@@ -32,8 +32,8 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = [
-    "mypy==1.18.2",
-    "pytest==9.1.1",
+    "mypy==2.4.0",
+    "pytest==8.4.2",
     "ruff==0.13.3",
 ]
 
@@ -41,8 +41,8 @@ dev = [
 quantdiff = "quantdiff.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/quantdiff/quantdiff"
-Issues = "https://github.com/quantdiff/quantdiff/issues"
+Homepage = "https://github.com/MadhankumarAI/Quantdiff"
+Issues = "https://github.com/MadhankumarAI/Quantdiff/issues"
 
 [tool.hatch.version]
 path = "src/quantdiff/_version.py"

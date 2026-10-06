@@ -260,6 +260,7 @@ def test_run_names_the_card_to_share(
     ],
 )
 def test_fail_on_sets_the_exit_code(
+    *,
     fake_execute: list[RunPlan],
     verdicts: list[Verdict],
     tmp_path: Path,
@@ -310,6 +311,7 @@ def test_fail_on_avoid_fails_when_nothing_is_recommended(
     ("fits", "code"), [(True, cli.EXIT_OK), (False, cli.EXIT_REGRESSION), (None, 3)]
 )
 def test_fail_on_avoid_passes_a_usable_candidate_only_when_it_fits_the_budget(
+    *,
     fake_execute: list[RunPlan],
     verdicts: list[Verdict],
     tmp_path: Path,

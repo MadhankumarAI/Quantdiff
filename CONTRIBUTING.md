@@ -8,8 +8,8 @@ are all welcome.
 You need [uv](https://docs.astral.sh/uv/) and Python 3.10 or newer.
 
 ```
-git clone https://github.com/quantdiff/quantdiff
-cd quantdiff
+git clone https://github.com/MadhankumarAI/Quantdiff
+cd Quantdiff
 uv venv
 uv pip install -e ".[dev]"
 ```

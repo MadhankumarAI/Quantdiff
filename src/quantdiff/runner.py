@@ -131,7 +131,16 @@ def execute(
         outputs, cached = _reference_outputs(plan, ref_backend, ref_info, cache, tracker)
         ref_result = _reference_result(plan, ref_backend, ref_info, outputs, tracker, cached=cached)
         results = tuple(
-            _run_candidate(plan, spec, backend, info, ref_backend, ref_info, outputs, tracker)
+            _run_candidate(
+                plan,
+                spec,
+                backend=backend,
+                info=info,
+                reference=ref_backend,
+                ref_info=ref_info,
+                outputs=outputs,
+                tracker=tracker,
+            )
             for spec, (backend, info) in zip(plan.candidates, candidates, strict=True)
         )
     finally:
@@ -286,6 +295,7 @@ def _reference_result(
 def _run_candidate(
     plan: RunPlan,
     spec: CandidateSpec,
+    *,
     backend: Backend,
     info: ServerInfo,
     reference: Backend,
@@ -296,7 +306,15 @@ def _run_candidate(
     tracker.model = spec.label
     findings = _preflight(plan, backend, reference, tracker)
     answers = _answer_cases(plan, backend, tracker, spec.label)
-    logit, logit_error = _logit_tier(plan, backend, info, ref_info, outputs, findings, tracker)
+    logit, logit_error = _logit_tier(
+        plan,
+        backend,
+        info=info,
+        ref_info=ref_info,
+        outputs=outputs,
+        findings=findings,
+        tracker=tracker,
+    )
 
     errors = []
     if answers.failures:
@@ -325,6 +343,7 @@ def _run_candidate(
 def _logit_tier(
     plan: RunPlan,
     backend: Backend,
+    *,
     info: ServerInfo,
     ref_info: ServerInfo,
     outputs: ReferenceOutputs,
@@ -339,12 +358,15 @@ def _logit_tier(
     if any(f.check == "tokenizer" and f.severity == "fail" for f in findings):
         tracker.step("scoring", units, "skipped")
         return None, "logit tier skipped: tokenizer differs from the reference"
-    return _teacher_force(plan, backend, info, ref_info, outputs, tracker)
+    return _teacher_force(
+        plan, backend, info=info, ref_info=ref_info, outputs=outputs, tracker=tracker
+    )
 
 
 def _teacher_force(
     plan: RunPlan,
     backend: Backend,
+    *,
     info: ServerInfo,
     ref_info: ServerInfo,
     outputs: ReferenceOutputs,
